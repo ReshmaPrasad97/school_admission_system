@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+<div align="center">
+    <div align="center" class="border">
+      
+         
+        <div class="row c1 g-3 justify-content-center ">
+            <div class="col-md-6">
+                <div>{{ msg }}</div>
+                <br/>
+                <div class="header">
+                    <h1 class="word">Register</h1>
+                 </div>
+                <form class="" action="{{ url_for('register') }}" method="POST">
+                    <!-- <div class="col-6 text-start">
+                        <label for="inputAddress" class="form-label  ">First_name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="first_name" name="first_name">
+                    </div>
+                    <div class="col-6 text-start">
+                        <label for="inputAddress" class="form-label  ">Last_name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="last_name" name="last_name">
+                    </div> -->
+                    <div class="col-6 text-start">
+                        <label for="inputAddress" class="form-label  ">Username</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="username" name="username">
+                    </div>
+                    <div class="col-md-6 text-start">
+                        <label for="inputPassword4" class="form-label ">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="password">
+                        </div>
+                    <div class="col-md-6 text-start">
+                    <label for="inputEmail4" class="form-label ">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="email">
+                    </div>
+        
+                    
+                    <div class="col-6 text-start">
+                    <label for="inputAddress2" class="form-label ">Phone number</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="phone number" name="phone">
+                    </div>
+                    
+                    
+                    <div class="col-12 mb-4">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                    <div>
+                        <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>
+{% endblock %}
+

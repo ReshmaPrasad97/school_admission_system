@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Index</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    
+    <section class="section d-flex align-items-center mt-5">
+           <!-- <img src="/static/images/img2.jpg" alt="" height="450" width="1350"> -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static', filename='images/img2.jpg')}}"  class="d-block w-100" alt="" height="450" width="1350">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='images/img5.jpg')}}" class="d-block " alt=" " height="450" width="1350">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename='images/img4.jpeg')}}"  class="d-block " alt=" " height="450" width="1350">
+          </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+    </section>
+
+  <section class="section sec1">
+        <div class="container-fluid">
+            <div class="row headings ">
+              <h1>BMM ENGLISH MEDIUM SENIOR SECONDARY SCHOOL</h1>
+        
+              <h3>About us</h3>
+               <!-- <div class="col-12"></div> -->
+            </div>
+            <p>BMM is a co-educational English Medium School founded in 1983 in the Reverential name and honour of H. H Baselious Marthoma Mathews I, The then supreme head of the Malankara Orthodox Church. The school aims to create an educational community where students and staff of various backgrounds live and study together in a quite and peaceful atmosphere.
+
+              Students are helped to develop respect for their own and other cultural-religious traditions. They are encouraged to discover and articulate their local, national and international communities. The school is an active participant in God's mission to the whole society. It is deep-rooted conviction that true religious faith and experiences are positive and necessary factors to shape mature personality.
+              
+              Sports and extra curricular activities offer a variety of experiences to discover interests and to develop individual capabilities and physical fitness. Through involvement in these activities students can develop leadership skills, build constructive social relationship and make a positive contribution to the school community.</p>
+            
+                    
+          </div>
+        </div>
+  
+          
+  </section>
+ 
+   <div class="box1 d-flex align-items-center ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+        
+            <div class="square para2 ">
+              <p class="para3">70+ EXPERIENCED FACULTIES</p>
+          
+            </div>
+          </div>
+          <div class="col-3">
+        
+            <div class="square para2 ">
+              <p class="para3">5000+ STUDENTS ENROLLED</p>
+            </div>
+          </div>
+          <div class="col-3">
+        
+            <div class="square para2 ">
+              <p class="para3">100% SATISFIED PARENTS</p>
+              
+            </div>
+          </div>
+          <div class="col-3">
+        
+            <div class="square para2 ">
+              <p class="para3">37+ YEARS OF EXPERIENCE</p>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+      <section class="section1  d-flex align-items-center">
+         <div class="container-fluid">
+          <div class="row ">
+            <!-- <div class="row gy-4"> -->
+              <div class="col-4">
+                <div class="square para ">
+                  <img src="/static/images/biology.png" class="pic" alt="" height="80" weight="80">
+                  <h3>Biology lab</h3>
+                  <p class="para1">Our school boasts of a highly equipped and well-stocked biology laboratory. The idea is to enable hands on learning by the students.</p>
+                </div>
+              
+              </div>
+            <!-- </div> -->
+            <div class="col-4">
+              <div class="square para ">
+                <img src="/static/images/chemistry.jpeg" class="pic" alt="" height="80" weight="80">
+                <h3>Chemistry lab</h3>
+                <p class="para1">At every stage in life, we are connected to different aspects of chemistry directly or indirectly.</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="square para ">
+                <img src="/static/images/physics.png" class="pic" alt="" height="80" weight="80">
+                <h3>Physics lab</h3>
+                <p class="para1"> Our state -of-the art physics laboratory is equipped with modern equipments to help the students learn the physics with experiments.</p>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+</div>
+  <footer class="ft  text-dark">
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <!-- <p>
+              Footer
+          </p> -->
+      </div>
+    </div>
+
+  <div class="row">
+      <div class="col-10 d-flex justify-content-between ">
+          
+          <ul class="list">
+              <li>Contact us</li>
+              <li>Pothenpuram .P.O, Kottayam Kerala - Pin 686502</li>
+             
+              
+          </ul>
+          <ul class="list">
+              <li>0481-2506431</li>
+              <li>bmmpampadykottayam@rediffmail.com</li>
+              
+              
+          </ul>
+      </div>
+      
+      </div>
+  </div>
+</footer>
+
+
+{% endblock %}
+<li class="nav-item1 px-4 ">
+<a class="nav-link text-white button btn btn-success "  href="{{url_for('login')}}">Login</a>
+</li>

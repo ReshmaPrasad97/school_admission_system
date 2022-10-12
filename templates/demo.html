@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <title>Student Dashboard</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light pt-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{url_for('static', filename='images/img.png')}}"   height="50" width="50">
+                <a class="navbar-brand text-white justify-content-end" href="{{url_for('index')}}">School Admission System</a> 
+
+            </a>
+          
+            <div class="justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white justify-content-between px-5" aria-current="page" href="{{url_for('index')}}">Home</a>
+                  </li>
+                
+                  <li class="nav-item px-4 ">
+                    <a class="nav-link text-white " href="#">Contact us</a>
+                  </li>
+                  <li class="nav-item1 px-4 ">
+                  <a class="nav-link text-white button btn btn-success "  href="{{url_for('payment')}}">Pay Fees</a>
+                </li>
+                
+                  
+                      <li class="nav-item1 px-4 ">
+                        <a class="nav-link text-white button btn btn-success "  href="{{url_for('index')}}">Logout</a>
+                      </li>
+                      
+                </ul>
+                
+              </div>
+        </div>
+    </nav>
+<div class="container">
+    <h2>Bank Details</h2>
+    <br/>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>User ID :</strong></div><div class="col-6">{{ bdata[0]}}</div>
+            </div>
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>User Name :</strong></div><div class="col-6">{{ bdata[1]}}</div>
+            </div>
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>Bank Name :</strong></div><div class="col-6">{{ bdata[2]}}</div>
+            </div>
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>Account Number :</strong></div><div class="col-6">{{ bdata[3]}}</div>
+            </div>
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>Account Type :</strong></div><div class="col-6">{{ bdata[4]}}</div>
+            </div>
+            <div class="d-flex ">
+                <div class="me-4 col-6"><strong>Balance :</strong></div><div class="col-6">{{ bdata[5]}}</div>
+            </div>
+            
+            <br/>
+           
+            <div class="d-flex ">
+                <div class="me-4 col-6"><a class="btn btn-primary" href="{{url_for('dashboard')}}" role="button">Back</a></div>
+            </div>
+        </div>
+    </div>   
+</div>
+{% endblock %}
